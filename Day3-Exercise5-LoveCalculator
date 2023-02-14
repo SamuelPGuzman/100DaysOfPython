@@ -1,0 +1,75 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+
+lower1 = name1.lower()
+
+
+count1= lower1.count("t")
+count2= lower1.count("r")
+count3= lower1.count("u")
+count4= lower1.count("e")
+
+counts1 = [count1, count2, count3, count4]
+
+totalcounts1 =sum(counts1)
+
+
+lower2 = name2.lower()
+
+
+count5= lower2.count("t")
+count6= lower2.count("r")
+count7= lower2.count("u")
+count8= lower2.count("e")
+
+counts2 = [count5, count6, count7, count8]
+
+totalcounts2 = sum(counts2)
+
+
+word1 = (totalcounts1 + totalcounts2)
+
+
+
+count9= lower1.count("l")
+count10= lower1.count("o")
+count11= lower1.count("v")
+count12= lower1.count("e")
+
+counts3 = [count9, count10, count11, count12]
+
+totalcounts3 =sum(counts3)
+
+
+count13= lower2.count("l")
+count14= lower2.count("o")
+count15= lower2.count("v")
+count16= lower2.count("e")
+
+counts4 = [count13, count14, count15, count16]
+
+totalcounts4 = sum(counts4)
+
+
+word2 = (totalcounts3 + totalcounts4)
+
+
+x = str(word1)+str(word2)
+w = (int(x))
+
+
+if w < 10 or w > 90:
+    print(f"Your score is {w}, you go together like coke and mentos.")
+if w >= 40 and w <= 50:
+    print(f"Your score is {w}, you are alright together.")
+if w > 10 and w < 40:
+    print(f"Your score is {w}.")
+if w > 50 and w < 90:
+    print(f"Your score is {w}.")
+
