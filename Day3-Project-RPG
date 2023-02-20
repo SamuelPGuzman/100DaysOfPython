@@ -1,0 +1,60 @@
+print('''
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+|                           ,,'``````````````',,                            |
+X                        ,'`                   `',                          X
+|                      ,'                         ',                        |
+X                    ,'          ;       ;          ',                      X
+|       (           ;             ;     ;             ;     (               |
+X        )         ;              ;     ;              ;     )              X
+|       (         ;                ;   ;                ;   (               |
+X        )    ;   ;    ,,'```',,,   ; ;   ,,,'```',,    ;   ;               X
+|       (    ; ',;   '`          `',   ,'`          `'   ;,' ;              |
+X        )  ; ;`,`',  _--~~~~--__   ' '   __--~~~~--_  ,'`,'; ;     )       X
+|       (    ; `,' ; :  /       \~~-___-~~/       \  : ; ',' ;     (        |
+X  )     )   )',  ;   -_\  o    /  '   '  \    o  /_-   ;  ,'       )   (   X
+| (     (   (   `;      ~-____--~'       '~--____-~      ;'  )     (     )  |
+X  )     )   )   ;            ,`;,,,   ,,,;',            ;  (       )   (   X
+| (     (   (  .  ;        ,'`  (__ '_' __)  `',        ;  . )     (     )  |
+X  )     \/ ,".). ';    ,'`        ~~ ~~        `',    ;  .(.", \/  )   (   X
+| (   , ,'|// / (/ ,;  '        _--~~-~~--_        '  ;, \)    \|', ,    )  |
+X ,)  , \/ \|  \\,/  ;;       ,; |_| | |_| ;,       ;;  \,//  |/ \/ ,   ,   X
+|",   .| \_ |\/ |#\_/;       ;_| : `~'~' : |_;       ;\_/#| \/| _/ |.   ,"  |
+X#(,'  )  \\\#\ \##/)#;     :  `\/       \/   :     ;#(\##/ /#///  (  ',)# ,X
+|| ) | \ |/ /#/ |#( \; ;     :               ;     ; ;/ )#| \#\ \| / | ( |) |
+X\ |.\\ |\_/#| /#),,`   ;     ;./\_     _/\.;     ;   `,,(#\ |#\_/| //.| / ,X
+| \\_/# |#\##/,,'`       ;     ~~--|~|~|--~~     ;       `',,\##/#| #\_// \/|
+X  ##/#  #,,'`            ;        ~~~~~        ;            `',,#  #\##  //X
+|####@,,'`                 `',               ,'`                 `',,@####| |
+X#,,'`                        `',         ,'`                        `',,###X
+|'  spb                          ~~-----~~                               `' |
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+''')
+print("Welcome to DANTE'S INFERNO:THE GAME.")
+print("Your mission is to bring the treasure home without being cursed by THE DEMON!.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+choice1 = input('You are teleported to THE LAIR OF THE DEMON. Choose your weapon. Type "Magic Wand" or "Flaming Arrow Bow". ').lower()
+if choice1 == "magic wand":
+  choice2 = input('Wise choice young warrior. Now choose your armor. Type "Vibranium" or "Blue Diamond". ').lower()
+  if choice2 == "vibranium" or choice2 == "blue diamond":
+    choice3 = input('Your are ready to face THE DEMON. Now choose your battle song. Type "Country" or "Hip-Hop". ').lower()
+    if choice3 == "country" or "hip-hop":
+      choice4 = input('The forces of good are with you. Now go and reach your destiny. BEAT THE DEMON in battle! THE DEMON lunges out at you. How do you strike? Type "electrocute", "poke in eye", or "unleash The Curse. ').lower()
+      if choice4 == "unleash the curse":
+        print("THE DEMON IS DEAD. YOU WIN!")
+      elif choice4 == "electrocute":
+        print("Gz. THE DEMON countered and tore you in half. GAME OVER.")
+      elif choice4 == "poke in eye":
+        print("L. THE DEMON ate you. GAME OVER.")
+
+      else:
+        print("THE DEMON made quick work of you. GAME OVER.")
+    else:
+      print("What the hail. You are dead. GAME OVER.")    
+  else:
+    print("Terrible decision! Who are you? Snookz? Go back home and train more. GAME OVER.")
+else:
+  print("No! THE DEMON is sure to tear you to shreds. Go home! GAME OVER.")
