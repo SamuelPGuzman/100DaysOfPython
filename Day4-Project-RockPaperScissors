@@ -1,0 +1,69 @@
+# Go to https://replit.com/@appbrewery/rock-paper-scissors-start?v=1
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+choice = input('WELCOME...to...ROCK, PAPER, SCISSORS! Type "0" for ROCK, "1" for PAPER, or "2" for SCISSORS. ')
+
+if choice == "0":
+    print(rock)
+if choice == "1":
+    print(paper)
+if choice == "2":
+    print(scissors)
+
+cpu = random.randint(0, 2)
+print("computer chose:")
+if cpu == (0):
+    print(rock)
+if cpu == (1):
+    print(paper)
+if cpu == (2):
+    print(scissors)
+
+
+if choice == "0" and cpu == (1):
+    print("You lose.")
+if choice == "0" and cpu == (2):
+    print("You win!")
+if choice == "0" and cpu == (0):
+    print("It's a draw!")
+    
+if choice == "1" and cpu == (2):
+    print("You lose.")
+if choice == "1" and cpu == (0):
+    print("You win!")
+if choice == "1" and cpu == (1):
+    print("It's a draw!")
+
+if choice == "2" and cpu == (0):
+    print("You lose.")
+if choice == "2" and cpu == (1):
+    print("You win!")
+if choice == "2" and cpu == (2):
+    print("It's a draw!")
+    
